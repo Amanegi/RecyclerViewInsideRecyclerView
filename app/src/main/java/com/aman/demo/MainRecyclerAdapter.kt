@@ -13,7 +13,7 @@ class MainRecyclerAdapter(val context: Context, private val jsonObject: JSONObje
     RecyclerView.Adapter<MainRecyclerAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = RowLayoutBinding.inflate(LayoutInflater.from(parent.context))
+        val binding = RowLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
