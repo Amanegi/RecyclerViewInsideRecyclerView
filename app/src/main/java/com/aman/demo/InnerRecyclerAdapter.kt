@@ -10,7 +10,7 @@ class InnerRecyclerAdapter(private val jsonArray: JSONArray) :
     RecyclerView.Adapter<InnerRecyclerAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = InnerRowLayoutBinding.inflate(LayoutInflater.from(parent.context))
+        val binding = InnerRowLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
